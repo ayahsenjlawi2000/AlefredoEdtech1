@@ -597,9 +597,10 @@
           }
           
           .player {
-            background-color: #080747;
+            background-color: #4dc8b9;
             padding: 58px;
             border-radius: 20px;
+           
           }
           
           .player img {
@@ -627,16 +628,18 @@
           
           .player h1 {
             font-size: 27px;
-            color: #E1E1E6;
+            color: #000000;
             padding-bottom: 7px;
           }
           
           
           .controls {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 20px;
-          }
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    padding-top: 20px; /* Space above the controls */
+}
+
           
           .track {
             padding-top: 28px;
@@ -803,9 +806,9 @@
                             <div id="player1" class="player horizontal">
                                 <div class="wrapper">
                                     <div class="info-wrapper">
-                                        <img src="img/music.jpg" alt="LogoMusicImage" />
+                                        <img src="img/music1-removebg-preview.png" alt="LogoMusicImage" />
                                    
-                                            <h1>Parent, IGCSE, Jordan</h1>
+                                            <h5 class="text-white">Parent, IGCSE, Jordan</h5>
                                     
                                     
                                     </div>
@@ -828,9 +831,9 @@
                             <div id="player3" class="player horizontal">
                                 <div class="wrapper">
                                     <div class="info-wrapper">
-                                        <img src="img/music.jpg" alt="LogoMusicImage">
+                                        <img src="img/music1-removebg-preview.png" alt="LogoMusicImage">
                                     
-                                            <h1>Student, ACT, Jordan</h1>
+                                        <h5 class="text-white">Student, ACT, Jordan</h5>
                                       
                                    
                                     </div>
@@ -852,9 +855,9 @@
                             <div id="player2" class="player horizontal">
                                 <div class="wrapper">
                                     <div class="info-wrapper">
-                                        <img src="img/music.jpg" alt="LogoMusicImage">
+                                        <img src="img/music1-removebg-preview.png" alt="LogoMusicImage">
                                         <div class="info">
-                                            <h1>Parent, AP, UAE</h1>
+                                            <h5 class="text-white">Parent, AP, UAE</h5>
                                        
                                         </div>
                                     </div>
@@ -871,6 +874,78 @@
                                         </div>
                                     </div>
                                     <audio id="audio2" class="audio" src="audio/2.mp3"></audio>
+                                </div>
+                            </div>
+                            <div id="player4" class="player horizontal">
+                                <div class="wrapper">
+                                    <div class="info-wrapper">
+                                        <img src="img/music1-removebg-preview.png" alt="LogoMusicImage">
+                                        <div class="info">
+                                            <h5 class="text-white">Parent, IB Jordan</h5>
+                                       
+                                        </div>
+                                    </div>
+                                    <div class="controls">
+                                        <div class="play" onclick="playAudio('audio4')">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.32137 25.586C7.9759 25.5853 7.63655 25.4948 7.33669 25.3232C6.66148 24.9406 6.24173 24.1978 6.24173 23.3915V7.07398C6.24173 6.26542 6.66148 5.52494 7.33669 5.14232C7.64369 4.96589 7.99244 4.87516 8.3465 4.87961C8.70056 4.88407 9.04692 4.98354 9.34938 5.16764L23.2952 13.5155C23.5859 13.6977 23.8255 13.9508 23.9916 14.251C24.1577 14.5511 24.2448 14.8886 24.2448 15.2316C24.2448 15.5747 24.1577 15.9121 23.9916 16.2123C23.8255 16.5125 23.5859 16.7655 23.2952 16.9478L9.34713 25.2979C9.0376 25.485 8.68307 25.5846 8.32137 25.586V25.586Z" fill="#E1E1E6"/>
+                                            </svg>
+                                        </div>
+                                        <div class="next" onclick="pauseAudio('audio4')">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 4C8.44772 4 8 4.44772 8 5V25C8 25.5523 8.44772 26 9 26H12C12.5523 26 13 25.5523 13 25V5C13 4.44772 12.5523 4 12 4H9ZM18 4C17.4477 4 17 4.44772 17 5V25C17 25.5523 17.4477 26 18 26H21C21.5523 26 22 25.5523 22 25V5C22 4.44772 21.5523 4 21 4H18Z" fill="#E1E1E6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <audio id="audio4" class="audio" src="audio/4.mp3"></audio>
+                                </div>
+                            </div>
+                            <div id="player5" class="player horizontal">
+                                <div class="wrapper">
+                                    <div class="info-wrapper">
+                                        <img src="img/music1-removebg-preview.png" alt="LogoMusicImage">
+                                        <div class="info">
+                                            <h5 class="text-white">Student, Edexcel, Jordan</h5>
+                                       
+                                        </div>
+                                    </div>
+                                    <div class="controls">
+                                        <div class="play" onclick="playAudio('audio5')">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.32137 25.586C7.9759 25.5853 7.63655 25.4948 7.33669 25.3232C6.66148 24.9406 6.24173 24.1978 6.24173 23.3915V7.07398C6.24173 6.26542 6.66148 5.52494 7.33669 5.14232C7.64369 4.96589 7.99244 4.87516 8.3465 4.87961C8.70056 4.88407 9.04692 4.98354 9.34938 5.16764L23.2952 13.5155C23.5859 13.6977 23.8255 13.9508 23.9916 14.251C24.1577 14.5511 24.2448 14.8886 24.2448 15.2316C24.2448 15.5747 24.1577 15.9121 23.9916 16.2123C23.8255 16.5125 23.5859 16.7655 23.2952 16.9478L9.34713 25.2979C9.0376 25.485 8.68307 25.5846 8.32137 25.586V25.586Z" fill="#E1E1E6"/>
+                                            </svg>
+                                        </div>
+                                        <div class="next" onclick="pauseAudio('audio5')">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 4C8.44772 4 8 4.44772 8 5V25C8 25.5523 8.44772 26 9 26H12C12.5523 26 13 25.5523 13 25V5C13 4.44772 12.5523 4 12 4H9ZM18 4C17.4477 4 17 4.44772 17 5V25C17 25.5523 17.4477 26 18 26H21C21.5523 26 22 25.5523 22 25V5C22 4.44772 21.5523 4 21 4H18Z" fill="#E1E1E6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <audio id="audio5" class="audio" src="audio/5.mp3"></audio>
+                                </div>
+                            </div>
+                            <div id="player6" class="player horizontal">
+                                <div class="wrapper">
+                                    <div class="info-wrapper">
+                                        <img src="img/music1-removebg-preview.png" alt="LogoMusicImage">
+                                        <div class="info">
+                                            <h5 class="text-white">Parent, O Level, UAE</h5>
+                                       
+                                        </div>
+                                    </div>
+                                    <div class="controls">
+                                        <div class="play" onclick="playAudio('audio6')">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.32137 25.586C7.9759 25.5853 7.63655 25.4948 7.33669 25.3232C6.66148 24.9406 6.24173 24.1978 6.24173 23.3915V7.07398C6.24173 6.26542 6.66148 5.52494 7.33669 5.14232C7.64369 4.96589 7.99244 4.87516 8.3465 4.87961C8.70056 4.88407 9.04692 4.98354 9.34938 5.16764L23.2952 13.5155C23.5859 13.6977 23.8255 13.9508 23.9916 14.251C24.1577 14.5511 24.2448 14.8886 24.2448 15.2316C24.2448 15.5747 24.1577 15.9121 23.9916 16.2123C23.8255 16.5125 23.5859 16.7655 23.2952 16.9478L9.34713 25.2979C9.0376 25.485 8.68307 25.5846 8.32137 25.586V25.586Z" fill="#E1E1E6"/>
+                                            </svg>
+                                        </div>
+                                        <div class="next" onclick="pauseAudio('audio6')">
+                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 4C8.44772 4 8 4.44772 8 5V25C8 25.5523 8.44772 26 9 26H12C12.5523 26 13 25.5523 13 25V5C13 4.44772 12.5523 4 12 4H9ZM18 4C17.4477 4 17 4.44772 17 5V25C17 25.5523 17.4477 26 18 26H21C21.5523 26 22 25.5523 22 25V5C22 4.44772 21.5523 4 21 4H18Z" fill="#E1E1E6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <audio id="audio6" class="audio" src="audio/6.mp3"></audio>
                                 </div>
                             </div>
                             <!-- Add more players as needed with unique IDs -->
