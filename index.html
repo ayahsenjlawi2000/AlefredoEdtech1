@@ -22,7 +22,9 @@
         <link href="lib/animate/animate.min.css" rel="stylesheet">
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -1190,62 +1192,78 @@ function pauseAudio(audioId) {
             }
         }
         </style>
-        <div id="services" class="our-services section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                        <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <h2 style="color:  #42BFAD; text-align: center;">Our Clients</h2>
-                        </div>
-                    </div>
+  <div id="services" class="our-services section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <h2 style="color: #42BFAD; text-align: center;">Our Clients</h2>
                 </div>
-            </div>
-            
-            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                <div class="carousel-inner">
-                    <!-- First Slide -->
-                    <div class="carousel-item active">
-                        <div class="d-flex justify-content-center">
-                            <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
-                                <img src="" class="" height="140" width="40%" alt="">
-                            </div>
-                            <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
-                                <img src="img/albayan.jpg" class="" height="140" width="40%" alt="">
-                            </div>
-                            <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
-                                <img src="img/al-etiffaq international academy.jpg" class="" height="140" width="40%" alt="">
-                            </div>
-                            <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
-                                <img src="img/alfarid.png" class="" height="130" width="80%" alt="">
-                            </div>
-                            <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
-                                <img src="img/al-mohamadia.jpg" class="" height="140" width="40%" alt="">
-                            </div>
-                            <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
-                                <img src="img/al-ra'ed.png" class="" height="280" width="80%" alt="">
-                            </div>
-                            <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
-                                <img src="img/finnish.jpg" class="" height="70" width="40%" alt="">
-                            </div>
-                            <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
-                                <img src="img/ittihad.png" class="" height="140" width="40%" alt="">
-                            </div>
-                        </div>
-                    </div>
-        
-                </div>
-        
-                <!-- Carousel controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
+    </div>
+    
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+
+                    <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
+                        <img src="img/al-mohamadia.jpg" height="140" width="40%" alt="Al Mohamadia">
+                    </div>
+                    <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
+                        <img src="img/al-ra'ed.png" height="180" width="auto" alt="Al Ra'ed">
+                    </div>
+                    <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
+                        <img src="img/finnish.jpg" height="170" width="auto" alt="Finnish">
+                    </div>
+                    <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
+                        <img src="img/ittihad.png" height="140" width="40%" alt="Ittihad">
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Second Slide -->
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  
+                    <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
+                        <img src="img/albayan.jpg" height="140" width="40%" alt="Al Bayan">
+                    </div>
+                    <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
+                        <img src="img/al-etiffaq international academy.jpg" height="100" width="auto" alt="Al-Etiffaq International Academy">
+                    </div>
+                    <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
+                        <img src="img/alfarid.png" height="130" width="80%" alt="Alfarid">
+                    </div>
+                    <div class="col-3 mx-3 align-items-center d-flex justify-content-center">
+                        <img src="img/al-mohamadia.jpg" height="140" width="40%" alt="Al Mohamadia">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Slide -->
+           
+
+            <!-- You can add more slides here -->
+        </div>
+
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+    
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-5">
