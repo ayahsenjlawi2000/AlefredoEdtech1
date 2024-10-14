@@ -1021,19 +1021,16 @@ function pauseAudio(audioId) {
                         </div>
                         
 
-
-
-                   
                     </div>
                     <!-- Second Slide -->
                     <div class="carousel-item">
                         <div class="d-flex justify-content-center flex-wrap">
-                            <div class="col-2 p-2">
+                            <div class="col-2 p-2 ">
                                 <img src="img/theTank.png" class="d-block w-100" alt="The Tank">
                             </div>
                          
                             <div class="col-2 p-2">
-                                <img src="img/Swiss.png" class="d-block w-100" alt="Swiss" style="width: 150px; height: auto; margin-top: -44px;">
+                                <img src="img/Swiss.png" class="d-block w-100" alt="Swiss" >
                             </div>
                             
                             <div class="col-2 p-2">
@@ -1086,22 +1083,36 @@ function pauseAudio(audioId) {
         </div>
         
         <style>
-            /* Custom CSS for smoother transitions and fixed image dimensions */
-            .carousel-item {
-                transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
-            }
-        
-            /* Ensure consistent height and responsive images */
-            .carousel-item img {
-                width: 100%;               /* Ensure the image takes the full width of the column */
-                height: 150px;            /* Set a fixed height for all images */
-                object-fit: contain;      /* Maintain aspect ratio */
-            }
-        
-            /* Padding for the columns to prevent image distortion */
-            .p-2 {
-                padding: 0.5rem;          /* Adjust padding as needed */
-            }
+      /* Custom CSS for smoother transitions and fixed image dimensions */
+.carousel-item {
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+}
+
+/* Ensure consistent height and responsive images */
+.carousel-item img {
+    width: 100%;               /* Ensure the image takes the full width of the column */
+    height: 150px;             /* Set a fixed height for all images */
+    object-fit: contain;       /* Maintain aspect ratio */
+}
+
+/* Padding for the columns to prevent image distortion */
+.p-2 {
+    padding: 0.5rem;           /* Adjust padding as needed */
+}
+
+/* Apply consistent styling for all screen sizes, including small screens */
+@media (max-width: 576px) {
+    #imageCarousel .d-flex {
+        justify-content: center;
+        flex-wrap: nowrap; /* Ensure it doesn't wrap, same as large screens */
+    }
+
+    .col-2 {
+        flex: 0 0 auto;       /* Prevent columns from shrinking on smaller screens */
+        max-width: 20%;       /* Set a consistent column width */
+    }
+}
+
         </style>
         
     
