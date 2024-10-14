@@ -231,7 +231,35 @@ html {
     scroll-behavior: smooth;
 }
 
-
+.clients {
+    color: #1a1a1a;
+  }
+  
+  .clients .swiper-slide img {
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+  
+  .clients .swiper-slide img:hover {
+    opacity: 1;
+  }
+  
+  .clients .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .clients .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    border: 1px solid #e9d696;
+  }
+  
+  .clients .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #e9d696;
+  }
+  
 .navbar .navbar-toggler {
     padding: 8px 15px;
     color: var(--bs-dark);
