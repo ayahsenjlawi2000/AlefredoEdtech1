@@ -227,6 +227,10 @@
     transition: .5s;
     opacity: 1;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 
 .navbar .navbar-toggler {
     padding: 8px 15px;
