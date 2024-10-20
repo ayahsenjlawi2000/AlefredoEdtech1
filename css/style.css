@@ -28,6 +28,27 @@
     z-index: 99;
 }
 
+.btn-watch-video {
+   font-size: 16px;
+   display: flex;
+   align-items: center;
+   transition: 0.5s;
+   margin: 10px 0 0 25px;
+   color: #fff;
+   line-height: 1;
+   background-color: #42BFAD; /* Change to desired color */
+   padding: 10px 20px; /* Adds padding inside the button */
+   border-radius: 50px; /* Makes the button rounded */
+   border: none; /* Remove any default border */
+   cursor: pointer; /* Adds pointer on hover */
+}
+
+.btn-watch-video:hover {
+background-color: #080747; /* Darkens the button on hover */
+color: #fff;
+}
+
+
 /*** Button Start ***/
 .btn {
     font-weight: 600;

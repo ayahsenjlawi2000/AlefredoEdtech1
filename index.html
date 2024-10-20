@@ -29,16 +29,17 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+ 
     </head>
 
     <body>
-
+        <div id="shared-header"></div>
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -48,29 +49,6 @@
         <!-- Spinner End -->
 
 
-        <!-- Topbar Start -->
-        <!-- <div class="container-fluid topbar px-0 d-none d-lg-block" style="background-color: #42BFAD !important;">
-            <div class="container px-0">
-                <div class="row gx-0 align-items-center" style="height: 45px;">
-                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                        <div class="d-flex flex-wrap">
-                            <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
-                            <a href="#" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
-                            <a href="#" class="text-muted me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 text-center text-lg-end">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-facebook-f text-white"></i></a>
-                            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-twitter text-white"></i></a>
-                            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-instagram text-white"></i></a>
-                            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-0"><i class="fab fa-linkedin-in text-white"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Topbar End -->
 
 
         <!-- Navbar & Hero Start -->
@@ -96,10 +74,9 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu m-0">
                                     <a href="blog.html" class="dropdown-item">Our Blog</a>
-                                    <!-- <a href="team.html" class="dropdown-item">Our Team</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a> -->
+                                   
                                     <a href="faqs.html" class="dropdown-item">FAQs</a>
-                                    <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
+                              
                                 </div>
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -132,15 +109,9 @@
 
         <!-- Carousel Start -->
         <div class="header-carousel owl-carousel">
-            <div class="header-carousel-item">
-                <div class="header-carousel-item-img-1">
-                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day.jpg" class="img-fluid w-100" alt="Image">
-                </div>
-                <div class="carousel-caption">
-                    <h1 class="display-1 text-capitalize text-white mt-4"> Welcome to Alefredo EdTech </h1>
-                    <h4 class="text-white">Your Way To Excel</h4>
-                </div>
-            </div>
+
+
+               
             <div class="header-carousel-item mx-auto">
                 <div class="header-carousel-item-img-2">
                     <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day (1).jpg" class="img-fluid w-100" alt="Image">
@@ -150,47 +121,97 @@
                         <h1 class="display-1 text-capitalize text-white mt-5">Alefredo EdTech offers holistic educational solutions,</h1>
                         <p class="mb-5 fs-5"> including interactive mock exams to assess and improve student performance, along with teacher summaries and educational materials in various formats. 
                             Our platform also provides access to an affordable marketplace for used academic books.
-                       
                         </p>
-                        <style>
-                         .btn-watch-video {
-                            font-size: 16px;
-                            display: flex;
-                            align-items: center;
-                            transition: 0.5s;
-                            margin: 10px 0 0 25px;
-                            color: #fff;
-                            line-height: 1;
-                            background-color: #42BFAD; /* Change to desired color */
-                            padding: 10px 20px; /* Adds padding inside the button */
-                            border-radius: 50px; /* Makes the button rounded */
-                            border: none; /* Remove any default border */
-                            cursor: pointer; /* Adds pointer on hover */
-                        }
-
-.btn-watch-video:hover {
-    background-color: #080747; /* Darkens the button on hover */
-    color: #fff;
-}
-
-                        </style>
-                    <div class="d-flex justify-content-center justify-content-lg-start">
-                     
-                        <a href="https://youtu.be/fdDk2ix2OhQ" class="glightbox btn-watch-video"><i
-                            class="bi bi-play-circle"></i><span>Watch Video</span></a>
-                      </div>
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                            <a href="https://youtu.be/fdDk2ix2OhQ" class="glightbox btn-watch-video"><i
+                                class="bi bi-play-circle"></i><span>Watch Video</span></a>                        </div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="header-carousel-item">
-                <div class="header-carousel-item-img-3">
-                    <img src="img/modern-art-cl-with-students-creating-animated-ch-generative-ai.jpg" class="img-fluid w-100" alt="Image">
+            
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-1">
+                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day.jpg" class="img-fluid w-100" alt="Image">
                 </div>
                 <div class="carousel-caption">
-                   
+                    <h1 class="display-1 text-capitalize text-white mt-4"> Alefredo EdTech </h1>
+                    <h4 class="text-white">One Stop Shop for international curriculums</h4>
                 </div>
-            </div> -->
+            </div>
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-1">
+                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day.jpg" class="img-fluid w-100" alt="Image">
+                </div>
+                <div class="carousel-caption">
+                    <h1 class="display-1 text-capitalize text-white mt-4"> Maximize </h1>
+                    <h4 class="text-white">Your chances of success with our comprehensive mock exams</h4>
+                </div>
+            </div>
+            <div class="header-carousel-item mx-auto">
+                <div class="header-carousel-item-img-2">
+                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day (1).jpg" class="img-fluid w-100" alt="Image">
+                </div>
+                <div class="carousel-caption">
+                    <div class="carousel-caption-inner text-center p-3">
+                        <h5 class="display-1  text-white mt-5">Amercian System</h5>
+                        <h4 class="text-white">
+                            British System ( Check Point ,) Cambridge, Edexcel, AQA)
+                            IB Diploma
+                        </h4>
+                     
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Duplicate this block for more items -->
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-1">
+                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day.jpg" class="img-fluid w-100" alt="Image">
+                </div>
+                <div class="carousel-caption">
+                    <h1 class="display-1 text-capitalize text-white mt-4"> Ace Our International Exams with our past papers</h1>
+                    <h4 class="text-white"> </h4>
+                </div>
+            </div>
+        
+            <div class="header-carousel-item mx-auto">
+                <div class="header-carousel-item-img-2">
+                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day (1).jpg" class="img-fluid w-100" alt="Image">
+                </div>
+                <div class="carousel-caption">
+                    <div class="carousel-caption-inner text-center p-3">
+                        <h1 class="display-1 text-capitalize text-white mt-5">Alefredo EdTech offers holistic educational solutions,</h1>
+                        <p class="mb-5 fs-5"> including interactive mock exams to assess and improve student performance, along with teacher summaries and educational materials in various formats. 
+                            Our platform also provides access to an affordable marketplace for used academic books.
+                        </p>
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                            <a href="https://youtu.be/fdDk2ix2OhQ" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-1">
+                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day.jpg" class="img-fluid w-100" alt="Image">
+                </div>
+                <div class="carousel-caption">
+                    <h1 class="display-1 text-capitalize text-white mt-4">Unlock </h1>
+                    <h4 class="text-white">Your Full potential with our top-quality check points past papers</h4>
+                </div>
+            </div>
+      
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-1">
+                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day.jpg" class="img-fluid w-100" alt="Image">
+                </div>
+                <div class="carousel-caption">
+                    <h1 class="display-1 text-capitalize text-white mt-4">Don't Struggle</h1>
+                    <h4 class="text-white">with outdated study materials</h4>
+                </div>
+            </div>
         </div>
+        
         <!-- Carousel End -->
 
         <!-- About Start -->
@@ -349,10 +370,10 @@
                                 <img src="img/logo exams.png" class="img-fluid w-40" style="width: 180px; margin: 20px auto 0 auto;" alt="">
                                </a>
                             </div>
-                            <div class="service-content text-center p-4">
+                            <div class="service-content text-center p-4 " style="height: 220px;">
                                 <div class="service-content-inner">
                                     <!-- <a href="#" class="h4 mb-4 d-inline-flex text-start">Alefredo Exams</a> -->
-                                    <p class="mb-4">BOOST your exam grades to an A+ level with the help of more than 40,000 Interactive mock exams & questions</p>
+                                    <p class="mb-4">BOOST your exam grades <br> to an A+ level with the help of more than 40,000  <br> Interactive mock exams & questions</p>
                                 </div>
                             </div>
                         </div>
@@ -365,7 +386,7 @@
                                 <img src="img/logo books.png  " class="img-fluid w-40 rounded-top" style="width: 180px; margin: 20px auto 0 auto;"alt="">
                             </a>
                             </div>
-                            <div class="service-content text-center p-4">
+                            <div class="service-content text-center p-4" style="height: 212px;">
                                 <div class="service-content-inner">
                                     <!-- <a href="#" class="h4 mb-4 d-inline-flex text-start">Alefredo Books</a> -->
                                     <p class="mb-4">An online marketplace for academic books, past papers, and teacher summaries, available in both digital and paper formats, serving all international systems
@@ -826,7 +847,7 @@
                 <div class="row g-4 align-items-center">
                     <div class="col-xl-4 wow fadeInLeft" data-wow-delay="0.1s">
                         <div class="h-100 rounded">
-                            <h4 class="text-primary">Our Feedbacks </h4>
+                            <h4 style="color: #42BFAD;">Our Feedbacks </h4>
                             <h1 class="display-4 mb-4">Clients are Talking</h1>
                             <!-- <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum atque soluta unde itaque. Consequatur quam odit blanditiis harum veritatis porro.</p> -->
                             <!-- <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Read All Reviews <i class="fas fa-arrow-right ms-2"></i></a> -->
@@ -1131,48 +1152,7 @@ function pauseAudio(audioId) {
 
 
 
-      <div id="services" class="our-services section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                  
-                        <h2 style="color: #42BFAD; text-align: center;">Our Social Impacts</h2>
-                   
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="img/1.png" class="d-block mx-auto img-fluid" alt="Ahli University" style="max-height: 150px; width: auto;">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/2.png" class="d-block mx-auto img-fluid" alt="Al Etiffaq International Academy" style="max-height: 150px; width: auto;">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/3.png" class="d-block mx-auto img-fluid" alt="Al Mohamadia" style="max-height: 150px; width: auto;">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/4.png" class="d-block mx-auto img-fluid" alt="Al Ra'ed" style="max-height: 150px; width: auto;">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/5.png" class="d-block mx-auto img-fluid" alt="Al Bayan" style="max-height: 150px; width: auto;">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/6.png" class="d-block mx-auto img-fluid" alt="Al Farid" style="max-height: 150px; width: auto;">
-                    </div>
-                </div>
     
-                <!-- Add Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-    
-                <!-- Add Pagination (Optional) -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </div>
     
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -1217,7 +1197,8 @@ function pauseAudio(audioId) {
             });
         });
     </script>
-    
+    <br>
+    <br>
        <h2 style="color: #42BFAD; text-align: center;">Our Partners</h2>
  <div class="slider-container">
     <div class="slider-track">
@@ -1277,8 +1258,132 @@ function pauseAudio(audioId) {
   </style>
 
 
+<!-- Podcast Section -->
+<section class="podcast-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4" style="color: #38A192;">Alefredo Podcast</h2>
+        <p class="text-center mb-5">Join us as we discuss various topics in education, share insights, and interview experts in the field. Tune in for the latest episodes!</p>
 
+        <div class="row"> <!-- Bootstrap row for responsiveness -->
+            <div class="col-12 col-md-6 col-lg-3 mb-4"> <!-- Responsive column for each episode -->
+                <div class="podcast-episode">
+                    <h4 style="color: #38A192;">Episode 1: The Role of Parents in Academic Enhancement</h4>
+                   
+                   <br> <p>In this episode, we explore how parents can support their children's academic growth through effective involvement and collaboration with educators.</p>
+                    <a href="https://youtu.be/7Ylp8yiIM0U?si=Ti1xBbnAQXRgO95J" target="_blank">
+                        <img src="img/pod1.jfif" alt="Episode 1: The Role of Parents in Academic Enhancement" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="podcast-episode">
+                    <h4 style="color: #38A192;">Episode 2: Unforgettable Students and Classes by Teachers</h4>
+                    <p>In this episode, we share stories of students and classes that leave a lasting impression on teachers and explore the qualities that make them unforgettable.</p>
+                    <a href="https://youtu.be/thzMX2MN4OM?si=AHkPhU00BvDSUlRH" target="_blank">
+                        <img src="img/pod2.jfif" alt="Episode 2: Unforgettable Students and Classes by Teachers" class="img-fluid" style="width: 380px;height: 390px;">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="podcast-episode">
+                    <h4 style="color: #38A192;">Episode 3: Suffering with School</h4>
+                   
+                   <br>
+                    <p>In this episode, we delve into the challenges faced by teachers in school, exploring the emotional and academic suffering that can impact their well-being and learning experience.</p>
+                    <a href="https://www.youtube.com/@alefredobooks2537/videos" target="_blank">
+                        <img src="img/pod3.jfif" alt="Episode 3: Struggles with School" class="img-fluid"style="width: 380px;height: 395px;">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="podcast-episode">
+                    <h4 style="color: #38A192;">Episode 4: Who is Dr. Ahmad Bani Yaseen?</h4>
+                    <p>In this episode, we explore the life and achievements of Dr. Ahmad Bani Yaseen, highlighting his contributions to education and his impact on students and the academic community.</p>
+                   <br>
+                    <a href="https://www.youtube.com/@alefredobooks2537/videos" target="_blank">
+                        <img src="img/pod4.jfif" alt="Episode 4: Who is Dr. Ahmad Bani Yaseen?" class="img-fluid"style="width: 380px;height: 395px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<style>.custom-img {
+    width: 250px; /* Default width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensures image fits within parent container */
+}
+
+.podcast-episode {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .custom-img {
+        width: auto; /* Allow custom width on larger screens */
+    }
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+    .podcast-section {
+        padding: 5rem 0;
+        background-color: #f8f9fa; /* Light background */
+    }
+
+    .podcast-episode {
+        text-align: center;
+        opacity: 0; /* Initially hidden for animation */
+        transform: translateY(20px); /* Initial position */
+        animation: fadeIn 0.5s forwards; /* Animation effect */
+        border: 1px solid #ccc; /* Optional: border for visual separation */
+        border-radius: 10px; /* Optional: rounded corners */
+        padding: 20px; /* Optional: padding for content */
+        background: white; /* Background for each episode */
+        transition: transform 0.3s; /* Transition for scaling */
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0); /* Final position */
+        }
+    }
+
+    /* Fade in delay for each episode */
+    .podcast-episode:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .podcast-episode:nth-child(2) {
+        animation-delay: 0.1s;
+    }
+
+    .podcast-episode:nth-child(3) {
+        animation-delay: 0.2s;
+    }
+
+    .podcast-episode:nth-child(4) {
+        animation-delay: 0.3s;
+    }
+
+    /* Hover effect for scaling */
+    .podcast-episode:hover {
+        transform: scale(1.05); /* Scale up on hover */
+    }
+
+    /* Grid layout */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+        gap: 20px; /* Space between grid items */
+    }
+</style>
               
         <!-- FAQ Start -->
         <div class="container-fluid faq py-5">
@@ -1286,7 +1391,7 @@ function pauseAudio(audioId) {
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
                         <div class="pb-5">
-                            <h4 class="text-primary">FAQs</h4>
+                            <h4 style="color: #42BFAD;">FAQs</h4>
                             <h1 class="display-4">Get the Answers to Common Questions</h1>
                         </div>
                        <div class="accordion bg-light rounded p-4" id="accordionExample">
@@ -1468,8 +1573,52 @@ function pauseAudio(audioId) {
         }
         </style>
 
+<div id="services" class="our-services section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              
+                    <h2 style="color: #42BFAD; text-align: center;">Our Social Impacts</h2>
+               
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/1.png" class="d-block mx-auto img-fluid" alt="Ahli University" style="max-height: 150px; width: auto;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/2.png" class="d-block mx-auto img-fluid" alt="Al Etiffaq International Academy" style="max-height: 150px; width: auto;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/3.png" class="d-block mx-auto img-fluid" alt="Al Mohamadia" style="max-height: 150px; width: auto;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/4.png" class="d-block mx-auto img-fluid" alt="Al Ra'ed" style="max-height: 150px; width: auto;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/5.png" class="d-block mx-auto img-fluid" alt="Al Bayan" style="max-height: 150px; width: auto;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/6.png" class="d-block mx-auto img-fluid" alt="Al Farid" style="max-height: 150px; width: auto;">
+                </div>
+            </div>
 
-    
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Add Pagination (Optional) -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-5">
@@ -1479,17 +1628,17 @@ function pauseAudio(audioId) {
                             <div class="footer-item">
                                 <h4 class="text-white mb-4">Contact Us</h4>
                                 <p class="mb-3">
-                                    <a href="tel:+962786494949">JOR + +962 786 49 49 49</a>
+                                    <a href="tel:+962786494949">JOR  +962 786 49 49 49</a>
                                   </p>
                                   <p class="mb-3">
-                                    <a href="tel:+971562573800">UAE + +971 562 57 38 00</a>
+                                    <a href="tel:+971562573800">UAE  +971 562 57 38 00</a>
                                   </p>
                                   <p class="mb-3">
                                     <a href="mailto:info@Alefredoedtech.com">info@Alefredoedtech.com</a>
                                   </p>
                                   
-                                <div class="position-relative mx-auto rounded-pill">
-                                    <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                  <div class="position-relative mx-auto rounded-pill">
+                                    <input class="form-control rounded-pill  py-3 ps-4 pe-5" type="text" placeholder="Enter your email" style="width: 290px; height: auto;">
                                     <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
                                 </div>
                             </div>
@@ -1500,62 +1649,110 @@ function pauseAudio(audioId) {
                             <h4 class="text-white mb-4">Explore</h4>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> Home</a>
                             <a href="#Services"><i class="fas fa-angle-right me-2"></i> Services</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
                            
                             <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
                         </div>
                     </div>
+                    
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">Contact Info</h4>
-                            <!-- <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a> -->
-                            <!-- <a href=""><i class="fas fa-envelope me-2"></i>  info@Alefredoedtech.com</a>
-                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i>JOR + +962 786 49 49 49</a>
-                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i>UAE + +971 562 57 38 00</a> -->
-                            <h5 class="text-white">
-                                Alefredo Books</h5>
-                            <div class="d-flex align-items-center">
-                                <a class="btn btn-light btn-md-square me-2" href="https://web.facebook.com/Alefredobooks/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-light btn-md-square me-2" href="">
-                                    <i class="fab "></i> X
-                                  </a>
-                                <a class="btn btn-light btn-md-square me-2" href="https://www.instagram.com/alefredobooks/"><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-light btn-md-square me-2" href="https://www.linkedin.com/company/alefredo-books/"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-light btn-md-square me-2" href="https://www.youtube.com/@alefredobooks2537"><i class="fab fa-youtube"></i></a>
-
-                             
-                                  
+                            <div class="footer-title">
+                                <h4 class="text-white mb-4">Social Media</h4>
+                                <h5 class="text-white mb-4">Alefredo Books </h5>
+                                <div class="social-links-container">
+                                    <div class="social-links">
+                                        <a class="btn btn-light btn-md-square me-2" href="https://web.facebook.com/Alefredobooks/?_rdc=1&_rdr">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="">
+                                            <i class="fab"></i> X
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.instagram.com/alefredobooks/">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.linkedin.com/company/alefredo-books/">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.youtube.com/@alefredobooks2537">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
                             </div>
-                            <h5 class="text-white">
-                                Alefredo Exams</h5>
-                            <div class="d-flex align-items-center">
-                                <a class="btn btn-light btn-md-square me-2" href="https://web.facebook.com/profile.php?id=61552539836658&_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-light btn-md-square me-2" href="https://x.com/Alefredoexam">
-                                    <i class="fab "></i> X
-                                  </a>
-                                <a class="btn btn-light btn-md-square me-2" href="https://www.instagram.com/alefredoexams/"><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-light btn-md-square me-2" href="https://www.linkedin.com/company/alefredo-books/"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-light btn-md-square me-2" href="https://www.youtube.com/channel/UCOudDb-aWb8PlPimhQYe53A"><i class="fab fa-youtube"></i></a>
-
-                             
-                                  
+                    
+                            <div class="footer-title">
+                                <h5 class="text-white mb-4">Alefredo Exams</h5>
+                                <div class="social-links-container">
+                                    <div class="social-links">
+                                        <a class="btn btn-light btn-md-square me-2" href="https://web.facebook.com/profile.php?id=61552539836658&_rdc=1&_rdr">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://x.com/Alefredoexam">
+                                            <i class="fab"></i> X
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.instagram.com/alefredoexams/">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.linkedin.com/company/alefredo-books/">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.youtube.com/channel/UCOudDb-aWb8PlPimhQYe53A">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <h5 class="text-white">
-                            Alefredo Books UAE</h5>
-                        <div class="d-flex align-items-center">
-                            <a class="btn btn-light btn-md-square me-2" href="https://web.facebook.com/Alefredobooks/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-light btn-md-square me-2" href="https://x.com/i/flow/login?redirect_after_login=%2FAlefredoB">
-                                <i class="fab "></i> X
-                              </a>
-                            <a class="btn btn-light btn-md-square me-2" href="https://www.instagram.com/alefredobooks.uae/"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-light btn-md-square me-2" href="https://www.linkedin.com/company/alefredo-books/"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-light btn-md-square me-2" href="https://www.youtube.com/@alefredobooks2537"><i class="fab fa-youtube"></i></a>
-
-                         
-                              
+                    
+                            <div class="footer-title">
+                                <h5 class="text-white mb-4">Alefredo Books UAE</h5>
+                                <div class="social-links-container">
+                                    <div class="social-links">
+                                        <a class="btn btn-light btn-md-square me-2" href="https://web.facebook.com/Alefredobooks/?_rdc=1&_rdr">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://x.com/i/flow/login?redirect_after_login=%2FAlefredoB">
+                                            <i class="fab"></i> X
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.instagram.com/alefredobooks.uae/">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.linkedin.com/company/alefredo-books/">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.youtube.com/@alefredobooks2537">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <style>
+     .footer-title {
+    position: relative;
+    cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+.social-links-container {
+    display: none; /* Hide social links by default */
+    margin-top: 10px; /* Add space between title and icons */
+}
+
+.footer-title:hover .social-links-container {
+    display: flex; /* Show social links on hover */
+    flex-direction: row; /* Align icons horizontally */
+    flex-wrap: nowrap; /* Prevent wrapping of icons */
+    justify-content: flex-start; /* Align icons to the left */
+}
+
+.social-links {
+    display: flex; /* Use flexbox for horizontal alignment */
+    gap: 10px; /* Add spacing between icons */
+}
+               </style>
                   
                 
                 </div>
@@ -1569,7 +1766,7 @@ function pauseAudio(audioId) {
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-primary"><i class="fas fa-copyright text-light me-2"></i>AlefredoEdTech</a>, All right reserved.</span>
+                        <span class="text-body"><a href="#" class="border-bottom " style="color: #42BFAD;" ><i class="fas fa-copyright text-light me-2"></i>AlefredoEdTech</a>, All right reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end text-body">
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
@@ -1583,11 +1780,12 @@ function pauseAudio(audioId) {
     
   
         <!-- Back to Top -->
-        <a href="https://api.whatsapp.com/send/?phone=962798136809&text&type=phone_number&app_absent=0" 
-        class="btny btn-lg-square whatsapp-btn" 
-        style="color: #fff; background-color: rgb(69, 190, 69);">
-         <i class="bi bi-whatsapp"></i>
-     </a>
+        <a href="https://wa.me/962786494949" 
+   class="btny btn-lg-square whatsapp-btn" 
+   style="color: #fff; background-color: rgb(69, 190, 69);">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
      
      <style>
        .whatsapp-btn {
@@ -1615,6 +1813,14 @@ function pauseAudio(audioId) {
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    </body>
+    
+    <script>
+        $(document).ready(function() {
+            $("#shared-header").load("header.html", function() {
+                // Optionally hide the spinner once the header is loaded
+                $("#spinner").fadeOut();
+            });
+        });
+    </script></body>
 
 </html>
