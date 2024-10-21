@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>AlefredoEdTech</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Include Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+ 
+    </head>
+
+    <body>
+    
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid sticky-top px-0">
+            <div class="position-absolute " style="left: 0; top: 0; width: 100%; height: 100%; background-color:#42BFAD">
+            </div>
+            <div class="container px-0">
+                <nav class="navbar navbar-expand-lg   py-3 px-4" style="background-color:#42BFAD">
+                    <a href="index.html" class="navbar-brand p-0">
+                        <h1 style="color: #38A192;" class="m-0"><img class="mt-2 d-none d-sm-block" height="80" width: auto; src="img/alefredoedtechimg-removebg-preview.png"></h1>
+                        <!-- <img src="img/logo.png" alt="Logo"> -->
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="#Services" class="nav-item nav-link">Services</a>
+                          
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="blog.html" class="dropdown-item">Our Blog</a>
+                                   
+                                    <a href="faqs.html" class="dropdown-item">FAQs</a>
+                              
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                     
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+        <!-- Carousel Start -->
+        <div class="header-carousel owl-carousel">
+
+
+               
+            <div class="header-carousel-item mx-auto">
+                <div class="header-carousel-item-img-2">
+                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day (1).jpg" class="img-fluid w-100" alt="Image">
+                </div>
+                <div class="carousel-caption">
+                    <div class="carousel-caption-inner text-center p-3">
+                        <h1 class="display-1 text-capitalize text-white mt-5">Alefredo EdTech offers holistic educational solutions,</h1>
+                        <p class="mb-5 fs-5"> including interactive mock exams to assess and improve student performance, along with teacher summaries and educational materials in various formats. 
+                            Our platform also provides access to an affordable marketplace for used academic books.
+                        </p>
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                            <a href="https://youtu.be/fdDk2ix2OhQ" class="glightbox btn-watch-video"><i
+                                class="bi bi-play-circle"></i><span>Watch Video</span></a>                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-1">
+                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day.jpg" class="img-fluid w-100" alt="Image">
+                </div>
+                <div class="carousel-caption">
+                    <h1 class="display-1 text-capitalize text-white mt-4"> Alefredo EdTech </h1>
+                    <h4 class="text-white">One Stop Shop for international curriculums</h4>
+                </div>
+            </div>
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-1">
+                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day.jpg" class="img-fluid w-100" alt="Image">
+                </div>
+                <div class="carousel-caption">
+                    <h1 class="display-1 text-capitalize text-white mt-4"> Maximize </h1>
+                    <h4 class="text-white">Your chances of success with our comprehensive mock exams</h4>
+                </div>
+            </div>
+            <div class="header-carousel-item mx-auto">
+                <div class="header-carousel-item-img-2">
+                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day (1).jpg" class="img-fluid w-100" alt="Image">
+                </div>
+                <div class="carousel-caption">
+                    <div class="carousel-caption-inner text-center p-3">
+                        <h5 class="display-1  text-white mt-5">Amercian System</h5>
+                        <h4 class="text-white">
+                            British System ( Check Point ,) Cambridge, Edexcel, AQA)
+                            IB Diploma
+                        </h4>
+                     
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Duplicate this block for more items -->
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-1">
+                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day.jpg" class="img-fluid w-100" alt="Image">
+                </div>
+                <div class="carousel-caption">
+                    <h1 class="display-1 text-capitalize text-white mt-4"> Ace Our International Exams with our past papers</h1>
+                    <h4 class="text-white"> </h4>
+                </div>
+            </div>
+        
+            <div class="header-carousel-item mx-auto">
+                <div class="header-carousel-item-img-2">
+                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day (1).jpg" class="img-fluid w-100" alt="Image">
+                </div>
+                <div class="carousel-caption">
+                    <div class="carousel-caption-inner text-center p-3">
+                        <h1 class="display-1 text-capitalize text-white mt-5">Alefredo EdTech offers holistic educational solutions,</h1>
+                        <p class="mb-5 fs-5"> including interactive mock exams to assess and improve student performance, along with teacher summaries and educational materials in various formats. 
+                            Our platform also provides access to an affordable marketplace for used academic books.
+                        </p>
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                            <a href="https://youtu.be/fdDk2ix2OhQ" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-1">
+                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day.jpg" class="img-fluid w-100" alt="Image">
+                </div>
+                <div class="carousel-caption">
+                    <h1 class="display-1 text-capitalize text-white mt-4">Unlock </h1>
+                    <h4 class="text-white">Your Full potential with our top-quality check points past papers</h4>
+                </div>
+            </div>
+      
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-1">
+                    <img src="img/group-diverse-teens-young-people-doing-activities-together-celebrating-world-youth-skills-day.jpg" class="img-fluid w-100" alt="Image">
+                </div>
+                <div class="carousel-caption">
+                    <h1 class="display-1 text-capitalize text-white mt-4">Don't Struggle</h1>
+                    <h4 class="text-white">with outdated study materials</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Carousel End -->
+
+  
+        <!-- Services Start -->
+        <div class="container-fluid service py-5" id="Services">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h4 class="text-primary"></h4>
+                    <h1 class="display-4"> Our Services</h1>
+                </div>
+                <div class="row g-4 justify-content-center text-center">
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp"  data-wow-delay="0.1s">
+              
+                        <div class="service-item bg-light rounded">
+                            <div class="service-img">
+                                <a href="https://alefredoexams.com/TeachersExplore">
+                                <img src="img/logo exams.png" class="img-fluid w-40" style="width: 180px; margin: 20px auto 0 auto;" alt="">
+                               </a>
+                            </div>
+                            <div class="service-content text-center p-4 " style="height: 220px;">
+                                <div class="service-content-inner">
+                                    <!-- <a href="#" class="h4 mb-4 d-inline-flex text-start">Alefredo Exams</a> -->
+                                    <p class="mb-4">BOOST your exam grades <br> to an A+ level with the help of more than 40,000  <br> Interactive mock exams & questions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item bg-light rounded">
+                            <div class="service-img">
+                                <a href="https://alefredobooks.com/">
+                                <img src="img/logo books.png  " class="img-fluid w-40 rounded-top" style="width: 180px; margin: 20px auto 0 auto;"alt="">
+                            </a>
+                            </div>
+                            <div class="service-content text-center p-4" style="height: 212px;">
+                                <div class="service-content-inner">
+                                    <!-- <a href="#" class="h4 mb-4 d-inline-flex text-start">Alefredo Books</a> -->
+                                    <p class="mb-4">An online marketplace for academic books, past papers, and teacher summaries, available in both digital and paper formats, serving all international systems
+                                    </p>
+                                    <span id="more-text" style="display: none;">
+                                        including American, British, and the IB diploma. Users worldwide can purchase products from this platform. Moreover, teachers can sell their notes on this platform regardless of their location. However, the “selling your books” service on this platform is currently limited to students in Jordan.
+                                      </span>
+                                    </p>
+                                    <a href="javascript:void(0);" id="learn-more-btn" onclick="toggleText()">Read More</a>
+                                      <script>function toggleText() {
+                                        var moreText = document.getElementById('more-text');
+                                        var btn = document.getElementById('learn-more-btn');
+                                        
+                                        if (moreText.style.display === 'none') {
+                                          moreText.style.display = 'inline';
+                                          btn.textContent = 'Show Less';
+                                        } else {
+                                          moreText.style.display = 'none';
+                                          btn.textContent = 'Learn More';
+                                        }
+                                      }
+                                      </script>            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item bg-light rounded">
+                            <div class="service-img">
+                                <a href="https://uae.alefredobooks.com/">
+                                <img src="img/alefredobooks logo flags-01.png" class="img-fluid w-40 rounded-top"style="width: 180px; margin: 20px auto 0 auto;" alt="">
+                            </a>
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="service-content-inner">
+                                    <!-- <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-donate fa-2x me-2"></i> Invesments Planning</a> -->
+                                    <p class="mb-4">An online marketplace dedicated to the UAE market, offering academic books, past papers, and teacher summaries in both digital and paper formats.
+                                    </p>
+                                    <span id="more-text-uae" style="display: none;">
+                                        It serves all international systems,  including American, British, the IB diploma, and UAE national systems.Users worldwide can purchase products from this platform. Furthermore, teachers can sell their notes on this platform, regardless of their location. However, the 'selling your books' service on this platform is currently limited to students in the UAE.
+                                      </span>
+                                    </p>
+                                    
+                                    <a href="javascript:void(0);" id="learn-more-btn-uae" onclick="toggleTextUAE()">Read More</a>
+                                    <script>function toggleTextUAE() {
+                                      var moreText = document.getElementById('more-text-uae');
+                                      var btn = document.getElementById('learn-more-btn-uae');
+                                      
+                                      if (moreText.style.display === 'none') {
+                                        moreText.style.display = 'inline';
+                                        btn.textContent = 'Show Less';
+                                      } else {
+                                        moreText.style.display = 'none';
+                                        btn.textContent = 'Learn More';
+                                      }
+                                    }
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item bg-light rounded">
+                            <div class="service-img">
+                                <a href="https://ksa.alefredobooks.com/">
+                                <img src="img/alefredobooks logo flags-02.png" class="img-fluid w-40 rounded-top" style="width: 180px; margin: 20px auto 0 auto;" alt="">
+                            </a>
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="service-content-inner">
+                                    <!-- <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-donate fa-2x me-2"></i> Private Client Investment</a> -->
+                                    <p class="mb-4">An online marketplace dedicated to the KSA market, offering academic books, past papers, and teacher summaries in both digital and paper formats.
+                                    </p>
+                                    <span id="more-text-ksa" style="display: none;">
+                                        including American, British, the IB diploma, and KSA national systems. Users worldwide can purchase products from this platform. Furthermore, teachers can sell their notes on this platform, regardless of their location. However, the 'selling your books' service on this platform is currently limited to students in the KSA.
+                                      </span>
+                                    </p>
+                                    
+                                    <a href="javascript:void(0);" id="learn-more-btn-ksa" onclick="toggleTextKSA()">Read More</a>
+                                    <script>function toggleTextKSA() {
+                                      var moreText = document.getElementById('more-text-ksa');
+                                      var btn = document.getElementById('learn-more-btn-ksa');
+                                      
+                                      if (moreText.style.display === 'none') {
+                                        moreText.style.display = 'inline';
+                                        btn.textContent = 'Show Less';
+                                      } else {
+                                        moreText.style.display = 'none';
+                                        btn.textContent = 'Learn More';
+                                      }
+                                    }
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <div class="footer-item">
+                                <h4 class="text-white mb-4">Contact Us</h4>
+                                <p class="mb-3">
+                                    <a href="tel:+962786494949">JOR  +962 786 49 49 49</a>
+                                  </p>
+                                  <p class="mb-3">
+                                    <a href="tel:+971562573800">UAE  +971 562 57 38 00</a>
+                                  </p>
+                                  <p class="mb-3">
+                                    <a href="mailto:info@Alefredoedtech.com">info@Alefredoedtech.com</a>
+                                  </p>
+                                  
+                                  <div class="position-relative mx-auto rounded-pill">
+                                    <input class="form-control rounded-pill  py-3 ps-4 pe-5" type="text" placeholder="Enter your email" style="width: 290px; height: auto;">
+                                    <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Explore</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Home</a>
+                            <a href="#Services"><i class="fas fa-angle-right me-2"></i> Services</a>
+                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                           
+                            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <div class="footer-title">
+                                <h4 class="text-white mb-4">Social Media</h4>
+                                <h5 class="text-white mb-4">Alefredo Books </h5>
+                                <div class="social-links-container">
+                                    <div class="social-links">
+                                        <a class="btn btn-light btn-md-square me-2" href="https://web.facebook.com/Alefredobooks/?_rdc=1&_rdr">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="">
+                                            <i class="fab"></i> X
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.instagram.com/alefredobooks/">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.linkedin.com/company/alefredo-books/">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.youtube.com/@alefredobooks2537">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                    
+                            <div class="footer-title">
+                                <h5 class="text-white mb-4">Alefredo Exams</h5>
+                                <div class="social-links-container">
+                                    <div class="social-links">
+                                        <a class="btn btn-light btn-md-square me-2" href="https://web.facebook.com/profile.php?id=61552539836658&_rdc=1&_rdr">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://x.com/Alefredoexam">
+                                            <i class="fab"></i> X
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.instagram.com/alefredoexams/">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.linkedin.com/company/alefredo-books/">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.youtube.com/channel/UCOudDb-aWb8PlPimhQYe53A">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="footer-title">
+                                <h5 class="text-white mb-4">Alefredo Books UAE</h5>
+                                <div class="social-links-container">
+                                    <div class="social-links">
+                                        <a class="btn btn-light btn-md-square me-2" href="https://web.facebook.com/Alefredobooks/?_rdc=1&_rdr">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://x.com/i/flow/login?redirect_after_login=%2FAlefredoB">
+                                            <i class="fab"></i> X
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.instagram.com/alefredobooks.uae/">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.linkedin.com/company/alefredo-books/">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a class="btn btn-light btn-md-square me-2" href="https://www.youtube.com/@alefredobooks2537">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <style>
+     .footer-title {
+    position: relative;
+    cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+.social-links-container {
+    display: none; /* Hide social links by default */
+    margin-top: 10px; /* Add space between title and icons */
+}
+
+.footer-title:hover .social-links-container {
+    display: flex; /* Show social links on hover */
+    flex-direction: row; /* Align icons horizontally */
+    flex-wrap: nowrap; /* Prevent wrapping of icons */
+    justify-content: flex-start; /* Align icons to the left */
+}
+
+.social-links {
+    display: flex; /* Use flexbox for horizontal alignment */
+    gap: 10px; /* Add spacing between icons */
+}
+               </style>
+                  
+                
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom " style="color: #42BFAD;" ><i class="fas fa-copyright text-light me-2"></i>AlefredoEdTech</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+    
+  
+        <!-- Back to Top -->
+        <a href="https://wa.me/962786494949" 
+   class="btny btn-lg-square whatsapp-btn" 
+   style="color: #fff; background-color: rgb(69, 190, 69);">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+     
+     <style>
+       .whatsapp-btn {
+         position: fixed; /* Fixes the button on the screen */
+         bottom: 20px; /* Distance from the bottom */
+         right: 20px; /* Distance from the right */
+         z-index: 1000; /* Ensures it stays on top of other elements */
+         padding: 10px; /* Optional padding */
+         border-radius: 50%; /* Makes the button circular */
+       }
+     </style>
+     
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+<!--     
+    <script>
+        $(document).ready(function() {
+            $("#shared-header").load("header.html", function() {
+                // Optionally hide the spinner once the header is loaded
+                $("#spinner").fadeOut();
+            });
+        });
+    </script> -->
+    
+
+
+
+
+
+</body>
+
+</html>
