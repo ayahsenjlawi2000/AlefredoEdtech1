@@ -124,7 +124,7 @@
                         </p>
                         <div class="d-flex justify-content-center justify-content-lg-start">
                             <a href="https://youtu.be/fdDk2ix2OhQ" class="glightbox btn-watch-video"><i
-                                class="bi bi-play-circle"></i><span>Watch Video</span></a>                        </div>
+                                class="bi bi-play-circle"></i><span style="margin-left: 7px;">Watch Video</span></a>                        </div>
                     </div>
                 </div>
             </div>
@@ -379,40 +379,43 @@
                         </div>
                     </div>
                     
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+          
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item bg-light rounded">
                             <div class="service-img">
                                 <a href="https://alefredobooks.com/">
-                                <img src="img/logo books.png  " class="img-fluid w-40 rounded-top" style="width: 180px; margin: 20px auto 0 auto;"alt="">
-                            </a>
+                                    <img src="img/logo books.png  " class="img-fluid w-40 rounded-top" style="width: 180px; margin: 20px auto 0 auto;" alt="Jordan Books Logo">
+                                </a>
                             </div>
-                            <div class="service-content text-center p-4" style="height: 212px;">
+                            <div class="service-content text-center p-4">
                                 <div class="service-content-inner">
-                                    <!-- <a href="#" class="h4 mb-4 d-inline-flex text-start">Alefredo Books</a> -->
-                                    <p class="mb-4">An online marketplace for academic books, past papers, and teacher summaries, available in both digital and paper formats, serving all international systems
-                                    </p>
-                                    <span id="more-text" style="display: none;">
+                                    <p class="mb-4">An online marketplace for academic books, past papers, and teacher summaries, available in both digital and paper formats, serving all international systems</p>
+                                    <span id="more-text-jordan" style="display: none;">
                                         including American, British, and the IB diploma. Users worldwide can purchase products from this platform. Moreover, teachers can sell their notes on this platform regardless of their location. However, the “selling your books” service on this platform is currently limited to students in Jordan.
-                                      </span>
-                                    </p>
-                                    <a href="javascript:void(0);" id="learn-more-btn" onclick="toggleText()">Read More</a>
-                                      <script>function toggleText() {
-                                        var moreText = document.getElementById('more-text');
-                                        var btn = document.getElementById('learn-more-btn');
-                                        
-                                        if (moreText.style.display === 'none') {
-                                          moreText.style.display = 'inline';
-                                          btn.textContent = 'Show Less';
-                                        } else {
-                                          moreText.style.display = 'none';
-                                          btn.textContent = 'Learn More';
+                                    </span>
+                                    <a href="javascript:void(0);" id="learn-more-btn-jordan" onclick="toggleTextJordan()">Read More</a>
+                                    <script>
+                                        function toggleTextJordan() {
+                                            var moreText = document.getElementById('more-text-jordan');
+                                            var btn = document.getElementById('learn-more-btn-jordan');
+                                            
+                                            if (moreText.style.display === 'none') {
+                                                moreText.style.display = 'inline';
+                                                btn.textContent = 'Show Less';
+                                            } else {
+                                                moreText.style.display = 'none';
+                                                btn.textContent = 'Read More';
+                                            }
                                         }
-                                      }
-                                      </script>            
+                                    </script>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
+
+                    
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item bg-light rounded">
                             <div class="service-img">
@@ -847,24 +850,21 @@
                 <div class="row g-4 align-items-center">
                     <div class="col-xl-4 wow fadeInLeft" data-wow-delay="0.1s">
                         <div class="h-100 rounded">
-                            <h4 style="color: #42BFAD;">Our Feedbacks </h4>
+                            <h4 style="color: #42BFAD;">Our Feedbacks</h4>
                             <h1 class="display-4 mb-4">Clients are Talking</h1>
                             <!-- <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum atque soluta unde itaque. Consequatur quam odit blanditiis harum veritatis porro.</p> -->
                             <!-- <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Read All Reviews <i class="fas fa-arrow-right ms-2"></i></a> -->
                         </div>
                     </div>
-               
+        
                     <div class="col-xl-8">
                         <div class="testimonial-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
-                    
+        
                             <div id="player1" class="player horizontal">
                                 <div class="wrapper">
                                     <div class="info-wrapper">
                                         <img src="img/music1-removebg-preview.png" alt="LogoMusicImage" />
-                                   
-                                            <h5 class="text-white">Parent, IGCSE, Jordan</h5>
-                                    
-                                    
+                                        <h5 class="text-white">Parent, IGCSE, Jordan</h5>
                                     </div>
                                     <div class="controls">
                                         <div class="play" onclick="playAudio('audio1')">
@@ -881,15 +881,12 @@
                                     <audio id="audio1" class="audio" src="audio/1.mp3"></audio>
                                 </div>
                             </div>
-                    
+        
                             <div id="player3" class="player horizontal">
                                 <div class="wrapper">
                                     <div class="info-wrapper">
                                         <img src="img/music1-removebg-preview.png" alt="LogoMusicImage">
-                                    
                                         <h5 class="text-white">Student, ACT, Jordan</h5>
-                                      
-                                   
                                     </div>
                                     <div class="controls">
                                         <div class="play" onclick="playAudio('audio3')">
@@ -906,13 +903,13 @@
                                     <audio id="audio2" class="audio" src="audio/3.mp3"></audio>
                                 </div>
                             </div>
+        
                             <div id="player2" class="player horizontal">
                                 <div class="wrapper">
                                     <div class="info-wrapper">
                                         <img src="img/music1-removebg-preview.png" alt="LogoMusicImage">
                                         <div class="info">
                                             <h5 class="text-white">Parent, AP, UAE</h5>
-                                       
                                         </div>
                                     </div>
                                     <div class="controls">
@@ -927,110 +924,43 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <audio id="audio2" class="audio" src="audio/2.mp3"></audio>
+                                    <audio id="audio3" class="audio" src="audio/2.mp3"></audio>
                                 </div>
                             </div>
-                            <div id="player4" class="player horizontal">
-                                <div class="wrapper">
-                                    <div class="info-wrapper">
-                                        <img src="img/music1-removebg-preview.png" alt="LogoMusicImage">
-                                        <div class="info">
-                                            <h5 class="text-white">Parent, IB Jordan</h5>
-                                       
-                                        </div>
-                                    </div>
-                                    <div class="controls">
-                                        <div class="play" onclick="playAudio('audio4')">
-                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.32137 25.586C7.9759 25.5853 7.63655 25.4948 7.33669 25.3232C6.66148 24.9406 6.24173 24.1978 6.24173 23.3915V7.07398C6.24173 6.26542 6.66148 5.52494 7.33669 5.14232C7.64369 4.96589 7.99244 4.87516 8.3465 4.87961C8.70056 4.88407 9.04692 4.98354 9.34938 5.16764L23.2952 13.5155C23.5859 13.6977 23.8255 13.9508 23.9916 14.251C24.1577 14.5511 24.2448 14.8886 24.2448 15.2316C24.2448 15.5747 24.1577 15.9121 23.9916 16.2123C23.8255 16.5125 23.5859 16.7655 23.2952 16.9478L9.34713 25.2979C9.0376 25.485 8.68307 25.5846 8.32137 25.586V25.586Z" fill="#E1E1E6"/>
-                                            </svg>
-                                        </div>
-                                        <div class="next" onclick="pauseAudio('audio4')">
-                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9 4C8.44772 4 8 4.44772 8 5V25C8 25.5523 8.44772 26 9 26H12C12.5523 26 13 25.5523 13 25V5C13 4.44772 12.5523 4 12 4H9ZM18 4C17.4477 4 17 4.44772 17 5V25C17 25.5523 17.4477 26 18 26H21C21.5523 26 22 25.5523 22 25V5C22 4.44772 21.5523 4 21 4H18Z" fill="#E1E1E6"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <audio id="audio4" class="audio" src="audio/4.mp3"></audio>
-                                </div>
-                            </div>
-                            <div id="player5" class="player horizontal">
-                                <div class="wrapper">
-                                    <div class="info-wrapper">
-                                        <img src="img/music1-removebg-preview.png" alt="LogoMusicImage">
-                                        <div class="info">
-                                            <h5 class="text-white">Student, Edexcel, Jordan</h5>
-                                       
-                                        </div>
-                                    </div>
-                                    <div class="controls">
-                                        <div class="play" onclick="playAudio('audio5')">
-                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.32137 25.586C7.9759 25.5853 7.63655 25.4948 7.33669 25.3232C6.66148 24.9406 6.24173 24.1978 6.24173 23.3915V7.07398C6.24173 6.26542 6.66148 5.52494 7.33669 5.14232C7.64369 4.96589 7.99244 4.87516 8.3465 4.87961C8.70056 4.88407 9.04692 4.98354 9.34938 5.16764L23.2952 13.5155C23.5859 13.6977 23.8255 13.9508 23.9916 14.251C24.1577 14.5511 24.2448 14.8886 24.2448 15.2316C24.2448 15.5747 24.1577 15.9121 23.9916 16.2123C23.8255 16.5125 23.5859 16.7655 23.2952 16.9478L9.34713 25.2979C9.0376 25.485 8.68307 25.5846 8.32137 25.586V25.586Z" fill="#E1E1E6"/>
-                                            </svg>
-                                        </div>
-                                        <div class="next" onclick="pauseAudio('audio5')">
-                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9 4C8.44772 4 8 4.44772 8 5V25C8 25.5523 8.44772 26 9 26H12C12.5523 26 13 25.5523 13 25V5C13 4.44772 12.5523 4 12 4H9ZM18 4C17.4477 4 17 4.44772 17 5V25C17 25.5523 17.4477 26 18 26H21C21.5523 26 22 25.5523 22 25V5C22 4.44772 21.5523 4 21 4H18Z" fill="#E1E1E6"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <audio id="audio5" class="audio" src="audio/5.mp3"></audio>
-                                </div>
-                            </div>
-                            <div id="player6" class="player horizontal">
-                                <div class="wrapper">
-                                    <div class="info-wrapper">
-                                        <img src="img/music1-removebg-preview.png" alt="LogoMusicImage">
-                                        <div class="info">
-                                            <h5 class="text-white">Parent, O Level, UAE</h5>
-                                       
-                                        </div>
-                                    </div>
-                                    <div class="controls">
-                                        <div class="play" onclick="playAudio('audio6')">
-                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.32137 25.586C7.9759 25.5853 7.63655 25.4948 7.33669 25.3232C6.66148 24.9406 6.24173 24.1978 6.24173 23.3915V7.07398C6.24173 6.26542 6.66148 5.52494 7.33669 5.14232C7.64369 4.96589 7.99244 4.87516 8.3465 4.87961C8.70056 4.88407 9.04692 4.98354 9.34938 5.16764L23.2952 13.5155C23.5859 13.6977 23.8255 13.9508 23.9916 14.251C24.1577 14.5511 24.2448 14.8886 24.2448 15.2316C24.2448 15.5747 24.1577 15.9121 23.9916 16.2123C23.8255 16.5125 23.5859 16.7655 23.2952 16.9478L9.34713 25.2979C9.0376 25.485 8.68307 25.5846 8.32137 25.586V25.586Z" fill="#E1E1E6"/>
-                                            </svg>
-                                        </div>
-                                        <div class="next" onclick="pauseAudio('audio6')">
-                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9 4C8.44772 4 8 4.44772 8 5V25C8 25.5523 8.44772 26 9 26H12C12.5523 26 13 25.5523 13 25V5C13 4.44772 12.5523 4 12 4H9ZM18 4C17.4477 4 17 4.44772 17 5V25C17 25.5523 17.4477 26 18 26H21C21.5523 26 22 25.5523 22 25V5C22 4.44772 21.5523 4 21 4H18Z" fill="#E1E1E6"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <audio id="audio6" class="audio" src="audio/6.mp3"></audio>
-                                </div>
-                            </div>
-                            <!-- Add more players as needed with unique IDs -->
-                    
+                        </div>
+                        <div class="carousel-controls mt-3 text-center">
+                            <button class="btn btn-outline-secondary prev-slide">Previous</button>
+                            <button class="btn btn-outline-secondary next-slide">Next</button>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
+        
         <!-- Testimonial End -->
         <script>
-           function playAudio(audioId) {
-    // Stop any other audio
-    const audios = document.querySelectorAll('audio');
-    audios.forEach(audio => {
-        if (audio.id !== audioId) {
-            audio.pause();
-            audio.currentTime = 0; // Reset to start
-        }
-    });
-    
-    // Play the selected audio
-    const audio = document.getElementById(audioId);
-    audio.play();
-}
+  $(document).ready(function(){
+    const $testimonialCarousel = $(".testimonial-carousel");
 
-function pauseAudio(audioId) {
-    const audio = document.getElementById(audioId);
-    audio.pause();
-}
+    $testimonialCarousel.owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        nav: false, // Disable default navigation
+        dots: false, // Disable default dots
+        autoplay: false, // Turn off auto sliding
+        smartSpeed: 1000
+    });
+
+    // Next and Previous buttons functionality
+    $(".next-slide").click(function() {
+        $testimonialCarousel.trigger('next.owl.carousel');
+    });
+
+    $(".prev-slide").click(function() {
+        $testimonialCarousel.trigger('prev.owl.carousel');
+    });
+});
 
         </script>
         
@@ -1236,10 +1166,9 @@ nextBtn.addEventListener('click', () => {
             <div class="col-12 col-md-6 col-lg-3 mb-4"> <!-- Responsive column for each episode -->
                 <div class="podcast-episode">
                     <h4 style="color: #38A192;">Episode 1: The Role of Parents in Academic Enhancement</h4>
-                   
-                   <br> <p>In this episode, we explore how parents can support their children's academic growth through effective involvement and collaboration with educators.</p>
+                    <p>In this episode, we explore how parents can support their children's academic growth through effective involvement and collaboration with educators.</p>
                     <a href="https://youtu.be/7Ylp8yiIM0U?si=Ti1xBbnAQXRgO95J" target="_blank">
-                        <img src="img/pod1.jfif" alt="Episode 1: The Role of Parents in Academic Enhancement" class="img-fluid">
+                        <img src="img/pod1.jfif" alt="Episode 1: The Role of Parents in Academic Enhancement" class="img-fluid custom-img">
                     </a>
                 </div>
             </div>
@@ -1248,18 +1177,16 @@ nextBtn.addEventListener('click', () => {
                     <h4 style="color: #38A192;">Episode 2: Unforgettable Students and Classes by Teachers</h4>
                     <p>In this episode, we share stories of students and classes that leave a lasting impression on teachers and explore the qualities that make them unforgettable.</p>
                     <a href="https://youtu.be/thzMX2MN4OM?si=AHkPhU00BvDSUlRH" target="_blank">
-                        <img src="img/pod2.jfif" alt="Episode 2: Unforgettable Students and Classes by Teachers" class="img-fluid" style="width: 380px;height: 390px;">
+                        <img src="img/pod2.jfif" alt="Episode 2: Unforgettable Students and Classes by Teachers" class="img-fluid custom-img">
                     </a>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3 mb-4">
                 <div class="podcast-episode">
                     <h4 style="color: #38A192;">Episode 3: Suffering with School</h4>
-                   
-                   <br>
                     <p>In this episode, we delve into the challenges faced by teachers in school, exploring the emotional and academic suffering that can impact their well-being and learning experience.</p>
                     <a href="https://www.youtube.com/@alefredobooks2537/videos" target="_blank">
-                        <img src="img/pod3.jfif" alt="Episode 3: Struggles with School" class="img-fluid"style="width: 380px;height: 395px;">
+                        <img src="img/pod3.jfif" alt="Episode 3: Struggles with School" class="img-fluid custom-img">
                     </a>
                 </div>
             </div>
@@ -1267,9 +1194,8 @@ nextBtn.addEventListener('click', () => {
                 <div class="podcast-episode">
                     <h4 style="color: #38A192;">Episode 4: Who is Dr. Ahmad Bani Yaseen?</h4>
                     <p>In this episode, we explore the life and achievements of Dr. Ahmad Bani Yaseen, highlighting his contributions to education and his impact on students and the academic community.</p>
-                   <br>
                     <a href="https://www.youtube.com/@alefredobooks2537/videos" target="_blank">
-                        <img src="img/pod4.jfif" alt="Episode 4: Who is Dr. Ahmad Bani Yaseen?" class="img-fluid"style="width: 380px;height: 395px;">
+                        <img src="img/pod4.jfif" alt="Episode 4: Who is Dr. Ahmad Bani Yaseen?" class="img-fluid custom-img" style="height:auto; width: 100%;">
                     </a>
                 </div>
             </div>
@@ -1277,22 +1203,23 @@ nextBtn.addEventListener('click', () => {
     </div>
 </section>
 
-<style>.custom-img {
-    width: 250px; /* Default width */
+<style>
+.custom-img {
+    width: 100%; /* Ensure images are responsive */
     height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensures image fits within parent container */
 }
 
 .podcast-episode {
-    text-align: center;
+    text-align: center; /* Center text */
 }
 
 @media (min-width: 768px) {
     .custom-img {
-        width: auto; /* Allow custom width on larger screens */
+        max-width: 100%; /* Ensure images do not exceed their parent */
     }
 }
 </style>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -1656,6 +1583,7 @@ nextBtn.addEventListener('click', () => {
                                     
                                 </div>
                             </div>
+                            <br>
                     
                             <div class="footer-title">
                                 <h5 class="text-white mb-4">Alefredo Exams</h5>
@@ -1679,7 +1607,7 @@ nextBtn.addEventListener('click', () => {
                                     </div>
                                 </div>
                             </div>
-                    
+                    <br>
                             <div class="footer-title">
                                 <h5 class="text-white mb-4">Alefredo Books UAE</h5>
                                 <div class="social-links-container">
