@@ -938,13 +938,41 @@
         </div>
         
         <!-- Testimonial End -->
+
+
+        <script>
+            function playAudio(audioId) {
+     // Stop any other audio
+     const audios = document.querySelectorAll('audio');
+     audios.forEach(audio => {
+         if (audio.id !== audioId) {
+             audio.pause();
+             audio.currentTime = 0; // Reset to start
+         }
+     });
+     
+     // Play the selected audio
+     const audio = document.getElementById(audioId);
+     audio.play();
+ }
+ 
+ function pauseAudio(audioId) {
+     const audio = document.getElementById(audioId);
+     audio.pause();
+ }
+ 
+         </script>
+
+
+
+
         <script>
   $(document).ready(function(){
     const $testimonialCarousel = $(".testimonial-carousel");
 
     $testimonialCarousel.owlCarousel({
         items: 1,
-        loop: true,
+        loop: false,
         margin: 10,
         nav: false, // Disable default navigation
         dots: false, // Disable default dots
@@ -964,7 +992,8 @@
 
         </script>
         
-   
+    
+        
         
     
       <br>
@@ -1167,17 +1196,21 @@ nextBtn.addEventListener('click', () => {
                 <div class="podcast-episode">
                     <h4 style="color: #38A192;">Episode 1: The Role of Parents in Academic Enhancement</h4>
                     <p>In this episode, we explore how parents can support their children's academic growth through effective involvement and collaboration with educators.</p>
+                    <br>
+                    
+                  
                     <a href="https://youtu.be/7Ylp8yiIM0U?si=Ti1xBbnAQXRgO95J" target="_blank">
                         <img src="img/pod1.jfif" alt="Episode 1: The Role of Parents in Academic Enhancement" class="img-fluid custom-img">
                     </a>
                 </div>
             </div>
+       
             <div class="col-12 col-md-6 col-lg-3 mb-4">
                 <div class="podcast-episode">
                     <h4 style="color: #38A192;">Episode 2: Unforgettable Students and Classes by Teachers</h4>
                     <p>In this episode, we share stories of students and classes that leave a lasting impression on teachers and explore the qualities that make them unforgettable.</p>
                     <a href="https://youtu.be/thzMX2MN4OM?si=AHkPhU00BvDSUlRH" target="_blank">
-                        <img src="img/pod2.jfif" alt="Episode 2: Unforgettable Students and Classes by Teachers" class="img-fluid custom-img">
+                        <img src="img/pod2.jfif" alt="Episode 2: Unforgettable Students and Classes by Teachers" class="img-fluid custom-img" style="height: 400px;">
                     </a>
                 </div>
             </div>
@@ -1185,8 +1218,10 @@ nextBtn.addEventListener('click', () => {
                 <div class="podcast-episode">
                     <h4 style="color: #38A192;">Episode 3: Suffering with School</h4>
                     <p>In this episode, we delve into the challenges faced by teachers in school, exploring the emotional and academic suffering that can impact their well-being and learning experience.</p>
+                  <br>
+                  
                     <a href="https://www.youtube.com/@alefredobooks2537/videos" target="_blank">
-                        <img src="img/pod3.jfif" alt="Episode 3: Struggles with School" class="img-fluid custom-img">
+                        <img src="img/pod3.jfif" alt="Episode 3: Struggles with School" class="img-fluid custom-img"style="height: 400px;">
                     </a>
                 </div>
             </div>
@@ -1194,8 +1229,9 @@ nextBtn.addEventListener('click', () => {
                 <div class="podcast-episode">
                     <h4 style="color: #38A192;">Episode 4: Who is Dr. Ahmad Bani Yaseen?</h4>
                     <p>In this episode, we explore the life and achievements of Dr. Ahmad Bani Yaseen, highlighting his contributions to education and his impact on students and the academic community.</p>
+                 <br>
                     <a href="https://www.youtube.com/@alefredobooks2537/videos" target="_blank">
-                        <img src="img/pod4.jfif" alt="Episode 4: Who is Dr. Ahmad Bani Yaseen?" class="img-fluid custom-img" style="height:auto; width: 100%;">
+                        <img src="img/pod4.jfif" alt="Episode 4: Who is Dr. Ahmad Bani Yaseen?" class="img-fluid custom-img" style="height:400px; width: 100%;">
                     </a>
                 </div>
             </div>
@@ -1210,7 +1246,7 @@ nextBtn.addEventListener('click', () => {
 }
 
 .podcast-episode {
-    text-align: center; /* Center text */
+    text-align: left; /* Center text */
 }
 
 @media (min-width: 768px) {
