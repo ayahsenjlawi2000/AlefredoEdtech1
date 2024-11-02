@@ -66,7 +66,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav ms-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="index.html" class="nav-item nav-link ">Home</a>
                             <a href="about.html" class="nav-item nav-link">About</a>
                             <a href="#Services" class="nav-item nav-link">Services</a>
                           
@@ -977,7 +977,7 @@
         nav: false, // Disable default navigation
         dots: false, // Disable default dots
         autoplay: false, // Turn off auto sliding
-        smartSpeed: 1000
+        // smartSpeed: 1000
     });
 
     // Next and Previous buttons functionality
@@ -1190,38 +1190,41 @@ nextBtn.addEventListener('click', () => {
     <div class="container">
         <h2 class="text-center mb-4" style="color: #38A192;">Alefredo Podcast</h2>
         <p class="text-center mb-5">Join us as we discuss various topics in education, share insights, and interview experts in the field. Tune in for the latest episodes!</p>
-
-        <div class="row"> <!-- Bootstrap row for responsiveness -->
-            <div class="col-12 col-md-6 col-lg-3 mb-4"> <!-- Responsive column for each episode -->
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
                 <div class="podcast-episode">
-                    <h4 style="color: #38A192;">Episode 1: The Role of Parents in Academic Enhancement</h4>
-                    <p>In this episode, we explore how parents can support their children's academic growth through effective involvement and collaboration with educators.</p>
-                    <br>
-                    
+                    <h4 style="color: #38A192;">Episode 1:</h4>
+                    <h4 style="color: #38A192;"> The Role of Parents in Academic Enhancement</h4>
+                 <p>In this episode, we explore how parents can support their children's academic growth through effective involvement and collaboration with educators.</p>
                   
-                    <a href="https://youtu.be/7Ylp8yiIM0U?si=Ti1xBbnAQXRgO95J" target="_blank">
+              
+                  
+                 <br>
+                 
+                 <a href="https://youtu.be/7Ylp8yiIM0U?si=Ti1xBbnAQXRgO95J" target="_blank">
                         <img src="img/pod1.jfif" alt="Episode 1: The Role of Parents in Academic Enhancement" class="img-fluid custom-img">
                     </a>
                 </div>
             </div>
-       
             <div class="col-12 col-md-6 col-lg-3 mb-4">
                 <div class="podcast-episode">
                     <h4 style="color: #38A192;">Episode 2: Unforgettable Students and Classes by Teachers</h4>
                     <p>In this episode, we share stories of students and classes that leave a lasting impression on teachers and explore the qualities that make them unforgettable.</p>
+                
                     <a href="https://youtu.be/thzMX2MN4OM?si=AHkPhU00BvDSUlRH" target="_blank">
-                        <img src="img/pod2.jfif" alt="Episode 2: Unforgettable Students and Classes by Teachers" class="img-fluid custom-img" style="height: 400px;">
+                        <img src="img/pod2.jfif" alt="Episode 2: Unforgettable Students and Classes by Teachers" class="img-fluid custom-img">
                     </a>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3 mb-4">
                 <div class="podcast-episode">
-                    <h4 style="color: #38A192;">Episode 3: Suffering with School</h4>
+                    <h4 style="color: #38A192;">Episode 3: </h4>
+                    <h4 style="color: #38A192;"> Suffering with School</h4>
                     <p>In this episode, we delve into the challenges faced by teachers in school, exploring the emotional and academic suffering that can impact their well-being and learning experience.</p>
-                  <br>
-                  
+                   <br>
+                   
                     <a href="https://www.youtube.com/@alefredobooks2537/videos" target="_blank">
-                        <img src="img/pod3.jfif" alt="Episode 3: Struggles with School" class="img-fluid custom-img"style="height: 400px;">
+                        <img src="img/pod3.jfif" alt="Episode 3: Struggles with School" class="img-fluid custom-img" style="margin-top: 12px;">
                     </a>
                 </div>
             </div>
@@ -1229,32 +1232,52 @@ nextBtn.addEventListener('click', () => {
                 <div class="podcast-episode">
                     <h4 style="color: #38A192;">Episode 4: Who is Dr. Ahmad Bani Yaseen?</h4>
                     <p>In this episode, we explore the life and achievements of Dr. Ahmad Bani Yaseen, highlighting his contributions to education and his impact on students and the academic community.</p>
-                 <br>
+                
                     <a href="https://www.youtube.com/@alefredobooks2537/videos" target="_blank">
-                        <img src="img/pod4.jfif" alt="Episode 4: Who is Dr. Ahmad Bani Yaseen?" class="img-fluid custom-img" style="height:400px; width: 100%;">
+                        <img src="img/pod4.jpg" alt="Episode 4: Who is Dr. Ahmad Bani Yaseen?" class="img-fluid custom-img episode-4-img" style="height: 450px;">
                     </a>
                 </div>
             </div>
+            
+            
         </div>
     </div>
 </section>
 
 <style>
 .custom-img {
-    width: 100%; /* Ensure images are responsive */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;      /* Full width */
+    height: auto;     /* Maintain aspect ratio */
+    max-height: 400px; /* Default maximum height */
 }
 
-.podcast-episode {
-    text-align: left; /* Center text */
+.episode-4-img {
+    max-height: 550px; /* Base maximum height for Episode 4 */
+    margin-top: 30px;
 }
 
-@media (min-width: 768px) {
-    .custom-img {
-        max-width: 100%; /* Ensure images do not exceed their parent */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .episode-4-img {
+        max-height: 300px; /* Reduce height on smaller screens */
+     
     }
 }
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .episode-4-img {
+        max-height: 300px; /* Medium screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .episode-4-img {
+        max-height: 300px; /* Larger screens */
+    }
+}
+
 </style>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
