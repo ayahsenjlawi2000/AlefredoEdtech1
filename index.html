@@ -1089,29 +1089,23 @@ nextBtn.addEventListener('click', () => {
 <!-- Podcast Section -->
 <section class="podcast-section py-5">
     <div class="container">
-        <h2 class="text-center mb-4" style="color: #38A192;">Alefredo Podcast</h2>
-        <p class="text-center mb-5">Join us as we discuss various topics in education, share insights, and interview experts in the field. Tune in for the latest episodes!</p>
+        <h2 class="podcast-title text-center mb-4">Alefredo Podcast</h2>
+        <p class="podcast-description text-center mb-5">Join us as we discuss various topics in education, share insights, and interview experts in the field. Tune in for the latest episodes!</p>
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3 mb-4">
                 <div class="podcast-episode">
-                    <h4 style="color: #38A192;">Episode 1:</h4>
-                    <h4 style="color: #38A192;"> The Role of Parents in Academic Enhancement</h4>
-                 <p>In this episode, we explore how parents can support their children's academic growth through effective involvement and collaboration with educators.</p>
-                  
-              
-                  
-                 <br>
-                 
-                 <a href="https://youtu.be/7Ylp8yiIM0U?si=Ti1xBbnAQXRgO95J" target="_blank">
-                        <img src="img/pod1.jfif" alt="Episode 1: The Role of Parents in Academic Enhancement" class="img-fluid custom-img">
+                    <h4 class="episode-title">Episode 1: The Role of Parents in Academic Enhancement</h4>
+                    <p class="episode-description">In this episode, we explore how parents can support their children's academic growth through effective involvement and collaboration with educators.</p>
+                    <a href="https://youtu.be/7Ylp8yiIM0U?si=Ti1xBbnAQXRgO95J" target="_blank">
+                        <img src="img/pod1.jfif" alt="Episode 1: The Role of Parents in Academic Enhancement" class="img-fluid custom-img" style="max-height:620px; object-fit: cover; border-radius: 8px;">
                     </a>
+                    
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3 mb-4">
                 <div class="podcast-episode">
-                    <h4 style="color: #38A192;">Episode 2: Unforgettable Students and Classes by Teachers</h4>
-                    <p>In this episode, we share stories of students and classes that leave a lasting impression on teachers and explore the qualities that make them unforgettable.</p>
-                
+                    <h4 class="episode-title">Episode 2: Unforgettable Students and Classes by Teachers</h4>
+                    <p class="episode-description">In this episode, we share stories of students and classes that leave a lasting impression on teachers and explore the qualities that make them unforgettable.</p>
                     <a href="https://youtu.be/thzMX2MN4OM?si=AHkPhU00BvDSUlRH" target="_blank">
                         <img src="img/pod2.jfif" alt="Episode 2: Unforgettable Students and Classes by Teachers" class="img-fluid custom-img">
                     </a>
@@ -1119,61 +1113,110 @@ nextBtn.addEventListener('click', () => {
             </div>
             <div class="col-12 col-md-6 col-lg-3 mb-4">
                 <div class="podcast-episode">
-                    <h4 style="color: #38A192;">Episode 3: </h4>
-                    <h4 style="color: #38A192;"> Suffering with School</h4>
-                    <p>In this episode, we delve into the challenges faced by teachers in school, exploring the emotional and academic suffering that can impact their well-being and learning experience.</p>
-                   <br>
-                   
+                    <h4 class="episode-title">Episode 3: Suffering with School</h4>
+                    <p class="episode-description">In this episode, we delve into the challenges faced by teachers in school, exploring the emotional and academic suffering that can impact their well-being and learning experience.</p>
                     <a href="https://www.youtube.com/@alefredobooks2537/videos" target="_blank">
-                        <img src="img/pod3.jfif" alt="Episode 3: Struggles with School" class="img-fluid custom-img" style="margin-top: 12px;">
+                        <img src="img/pod3.jfif" alt="Episode 3: Struggles with School" class="img-fluid custom-img">
                     </a>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-4">
+            <div class="col-12 col-md-6 col-lg-3 mb-4" style="margin-top: 250px;">
                 <div class="podcast-episode">
-                    <h4 style="color: #38A192;">Episode 4: Who is Dr. Ahmad Bani Yaseen?</h4>
-                    <p>In this episode, we explore the life and achievements of Dr. Ahmad Bani Yaseen, highlighting his contributions to education and his impact on students and the academic community.</p>
-                
-                    <a href="https://www.youtube.com/@alefredobooks2537/videos" target="_blank">
-                        <img src="img/pod4.jpg" alt="Episode 4: Who is Dr. Ahmad Bani Yaseen?" class="img-fluid custom-img episode-4-img" style="height: 450px;">
-                    </a>
+                    <a href="https://www.youtube.com/@alefredobooks2537/videos" target="_blank" class="explore-more-btn">Explore More</a>
                 </div>
             </div>
+            
             
             
         </div>
     </div>
 </section>
 
+
 <style>
+.explore-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #38A192;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.explore-more-btn:hover {
+    background-color: #2d8576;
+}
+
+.podcast-episode {
+    text-align: center;
+}
+
+.podcast-section {
+    background-color: #f8f9fa;
+}
+
+.podcast-title {
+    color: #38A192;
+    font-weight: 700;
+}
+
+.podcast-description {
+    color: #555;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.podcast-episode {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.episode-title {
+    color: #38A192;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.episode-description {
+    color: #333;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
 .custom-img {
-    width: 100%;      /* Full width */
-    height: auto;     /* Maintain aspect ratio */
-    max-height: 400px; /* Default maximum height */
+    width: 100%;
+    max-height: 330px; /* Set maximum height for all images */
+    object-fit: cover; /* Ensures images maintain aspect ratio within max-height */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
+.custom-img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 767px) {
+    .custom-img {
+        max-height: 200px; /* Adjust for smaller screens */
+    }
+}
 .episode-4-img {
-    max-height: 550px; /* Base maximum height for Episode 4 */
-    margin-top: 30px;
+    height: 450px;
+    object-fit: cover;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .episode-4-img {
-        max-height: 300px; /* Reduce height on smaller screens */
-     
-    }
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-    .episode-4-img {
-        max-height: 300px; /* Medium screens */
-    }
-}
-
-@media (min-width: 992px) {
-    .episode-4-img {
-        max-height: 300px; /* Larger screens */
+        height: auto;
     }
 }
 
